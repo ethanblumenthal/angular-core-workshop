@@ -6,6 +6,8 @@ import { MaterialModule } from '@workshop/material';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UiLoginModule } from '@workshop/ui-login';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +15,8 @@ import { UiLoginModule } from '@workshop/ui-login';
     BrowserModule,
     NxModule.forRoot(),
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
     MaterialModule,
     UiLoginModule,
     AppRoutingModule
